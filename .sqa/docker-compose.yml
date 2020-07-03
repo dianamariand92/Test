@@ -1,1 +1,10 @@
 version: "3.6"
+
+services:
+  myrepo-testing-java:
+    image: "indigodatacloud/ci-images:bas"
+    hostname: "myrepo-testing-host"
+    volumes:
+    - type: bind
+      source: ./myrepo
+      target: /myrepo-testing

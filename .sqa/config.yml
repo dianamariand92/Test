@@ -2,3 +2,11 @@ config:
   project_repos:
     myrepo:
       repo: 'https://github.com/dianamariand92/test.git'
+
+sqa_criteria:
+  qc_doc:
+    repos:
+      worsica-cicd:
+        container: myrepo-testing-host
+        commands:
+          - python setup.py build_sphinx
