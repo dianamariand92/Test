@@ -1,0 +1,4 @@
+config:
+  project_repos:
+    myrepo:
+      repo: 'https://github.com/dianamariand92/test.git'
