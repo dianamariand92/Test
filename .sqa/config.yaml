@@ -1,0 +1,12 @@
+config:
+  credentials:
+    - id: ""
+      username_var: ""
+sqa_criteria:
+  qc_doc:
+    repos:
+      web:
+        container: "name"
+        commands:
+          - "npm install"
+          - "npm run dev"
