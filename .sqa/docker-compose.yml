@@ -1,0 +1,10 @@
+services:
+  maven-testing:
+    command: sleep 600000
+    hostname: maven-testing
+    image: maven:3-alpine
+    volumes:
+    - source: ./
+      target: /maven-project
+      type: bind
+version: '3.7'
