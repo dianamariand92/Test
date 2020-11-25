@@ -35,6 +35,7 @@ const router = new VueRouter({
   }
 })
 
+//Esto es una prueba
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
