@@ -1,0 +1,14 @@
+config:
+  credentials: []
+  project_repos:
+    checkstyle-samples:
+      branch: master
+      repo: https://github.com/EOSC-synergy/checkstyle
+environment: {}
+sqa_criteria:
+  qc_style:
+    repos:
+      checkstyle-samples:
+        commands:
+        - mvn -f ./maven-project/checkstyle-samples/pom.xml checkstyle:check
+        container: maven-testing
