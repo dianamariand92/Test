@@ -1,14 +1,18 @@
 config:
   credentials: []
   project_repos:
-    checkstyle-samples:
+    checkstyles-samples:
       branch: master
-      repo: https://github.com/EOSC-synergy/checkstyle
+      deploy_template: .sqa/docker-compose.yml
+      repo: https://github.com/EOSC-synergy/checkstyle-samples
 environment: {}
 sqa_criteria:
   qc_style:
     repos:
-      checkstyle-samples:
+      checkstyles-samples:
         commands:
-        - mvn -f ./maven-project/checkstyle-samples/pom.xml checkstyle:check
+        - mvn checkstyle:check
         container: maven-testing
+        tox:
+          testenv: []
+          tox_file: ''
