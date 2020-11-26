@@ -1,10 +1,12 @@
 services:
   maven-testing:
-    command: sleep 600000
+    command: sleep infinity
+    container_name: maven-testing
+    environment: []
     hostname: maven-testing
     image: maven:3-alpine
     volumes:
-    - source: ./
-      target: /maven-project
+    - source: ./maven-project
+      target: /
       type: bind
 version: '3.7'
