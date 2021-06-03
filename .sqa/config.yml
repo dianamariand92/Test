@@ -1,0 +1,12 @@
+config:
+  credentials: []
+  project_repos: {}
+environment: {}
+sqa_criteria:
+  qc_doc:
+    repos:
+      this_repo:
+        commands:
+        - npm install
+        container: node
+timeout: 600
